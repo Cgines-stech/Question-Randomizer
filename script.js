@@ -1,25 +1,14 @@
 /* script.js */
 const allQuestions = [
-  "What inspires you most in your work?",
-  "Describe a challenge you overcame.",
-  "What are your goals for this year?",
-  "Who has been the most influential person in your career and why?",
-  "What's one project you're particularly proud of?",
-  "How do you stay motivated during tough times?",
-  "What's your favorite way to unwind after a long day?",
-  "What advice would you give to your younger self?",
-  "If you could learn any new skill instantly, what would it be?",
-  "What's one thing most people don't know about you?",
-  "Describe your perfect workday.",
-  "How do you define success?",
-  "What's your favorite quote or motto?",
-  "What do you love most about your job?",
-  "If you could have any superpower, what would it be and why?",
-  "What's your favorite memory at work?",
-  "What do you enjoy doing outside of work?",
-  "What's a fun fact about yourself?",
-  "What's something on your bucket list?",
-  "How do you handle stress or pressure?"
+  "If you could live anywhere in the world, where would it be?",
+  "Do you have any pets? Tell us about them.",
+  "What's the most unique place you've ever traveled to?",
+  "What's a quirky habit or ritual you have that makes you happy?",
+  "Have you ever performed in public? What did you do?",
+  "What's a talent you have that not many people know about?",
+  "What was your very first paid job?",
+  "What's the most unusual job you've ever had?",
+  "What's the most challenging project you've ever worked on?"
 ];
 
 function getRandomQuestions(n) {
@@ -36,7 +25,6 @@ function renderQuestions() {
     const div = document.createElement("div");
     div.className = "question";
 
-    // Store the question itself in a hidden input so it is submitted
     const hiddenQuestionInput = document.createElement("input");
     hiddenQuestionInput.type = "hidden";
     hiddenQuestionInput.name = `question${i}`;

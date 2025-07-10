@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <form action="https://formspree.io/f/xkgbdjpp" method="POST" enctype="multipart/form-data">
+  <form action="https://formspree.io/f/xkgbdjpp" method="POST">
     <h1>Employee Highlight Questions</h1>
 
     <input type="hidden" name="_subject" value="New Employee Highlight Submission" />
@@ -18,19 +17,7 @@
       <input type="text" id="name" name="name" required />
     </div>
 
-    <div class="form-row">
-      <label for="submittedFor">Name of Employee Highlighting</label>
-      <input type="text" id="submittedFor" name="submittedFor" required />
-    </div>
-
     <div id="questionsContainer"></div>
-
-    <!--
-    <div>
-      <label for="photo">Upload a photo:</label>
-      <input type="file" id="photo" name="photo" accept="image/*" />
-    </div>
-    -->
 
     <button type="submit" class="submit-btn">Submit</button>
     <input type="hidden" name="_redirect" value="thank-you.html" />
