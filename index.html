@@ -4,17 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Random Question Form</title>
+  <title>Employee Highlight Question Form</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <form action="https://formspree.io/f/xkgbdjpp" method="POST" enctype="multipart/form-data">
-    <h1>Answer 3 Random Questions</h1>
+    <h1>Employee Highlight Questions</h1>
+
+    <div class="form-row">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-row">
+      <label for="submittedFor">Name of Employee Highlighting</label>
+      <input type="text" id="submittedFor" name="submittedFor" required />
+    </div>
+
     <div id="questionsContainer"></div>
+
     <div>
       <label for="photo">Upload a photo:</label>
       <input type="file" id="photo" name="photo" accept="image/*" />
     </div>
+
     <button type="submit" class="submit-btn">Submit</button>
     <input type="hidden" name="_redirect" value="thank-you.html" />
   </form>
